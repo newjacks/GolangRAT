@@ -32,7 +32,7 @@ func parse(message string, bot *tgbotapi.BotAPI, update tgbotapi.Update)  {
 
 func main() {
 	initRat()
-	bot, err := tgbotapi.NewBotAPI("<TOKEN GOES HERE>")
+	bot, err := tgbotapi.NewBotAPI(BOT_TOKEN)
 	if err != nil {
 		log.Panic(err)
 	}
